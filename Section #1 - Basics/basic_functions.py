@@ -3,8 +3,8 @@
 import cv2 as cv
 
 # Read in an image
-img = cv.imread('../Resources/Photos/park.jpg')
-cv.imshow('Park', img)
+img = cv.imread('../Resources/Photos/sosuke.jpg')
+cv.imshow('sosuke', img)
 
 # Converting to grayscale
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
@@ -33,3 +33,6 @@ cv.imshow('Resized', resized)
 # Cropping
 cropped = img[50:200, 200:400]
 cv.imshow('Cropped', cropped)
+
+cv.waitKey(0)
+cv.destroyAllWindows()
